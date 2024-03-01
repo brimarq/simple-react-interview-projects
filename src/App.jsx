@@ -6,6 +6,7 @@ import "./App.css";
 // import LoadMoreData from "./components/load-more-button";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
+import QRCodeGenerator from "./components/qr-code-generator";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
       {/* Load more products component */}
       {/* <LoadMoreData /> */}
       {/* Load tree view/menu UI/recursive navigation menu component */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
+      {/* QR Code Generator component */}
+      <QRCodeGenerator />
     </>
   );
 }
