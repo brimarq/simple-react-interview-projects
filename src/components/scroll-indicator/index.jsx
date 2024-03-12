@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import "./scroll.css";
 
 export default function ScrollIndicator({ url }) {
@@ -85,3 +86,7 @@ export default function ScrollIndicator({ url }) {
     </div>
   );
 }
+
+ScrollIndicator.propTypes = {
+  url: PropTypes.string,
+};
