@@ -4,16 +4,18 @@ import "./App.css";
 // import StarRating from "./components/star-rating";
 // import ImageSlider from "./components/image-slider";
 // import LoadMoreData from "./components/load-more-button";
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data";
-import QRCodeGenerator from "./components/qr-code-generator";
-import LightDarkMode from "./components/light-dark-mode";
-import ScrollIndicator from "./components/scroll-indicator";
-import TabsTest from "./components/custom-tabs/tab-test";
-import ModalTest from "./components/custom-modal-popup/modal-test";
-import GithubProfileFinder from "./components/github-profile-finder";
-import SearchAutocomplete from "./components/search-autocomplete-with-api";
-import { TicTacToe } from "./components/tic-tac-toe";
+// import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data";
+// import QRCodeGenerator from "./components/qr-code-generator";
+// import LightDarkMode from "./components/light-dark-mode";
+// import ScrollIndicator from "./components/scroll-indicator";
+// import TabsTest from "./components/custom-tabs/tab-test";
+// import ModalTest from "./components/custom-modal-popup/modal-test";
+// import GithubProfileFinder from "./components/github-profile-finder";
+// import SearchAutocomplete from "./components/search-autocomplete-with-api";
+// import TicTacToe from "./components/tic-tac-toe";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
+import FeatureFlags from "./components/feature-flag";
 
 function App() {
   return (
@@ -50,7 +52,11 @@ function App() {
       {/* Search Autocomplete component */}
       {/* <SearchAutocomplete /> */}
       {/* Tic Tac Toe component */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      {/* Feature Flags implementation */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </>
   );
 }

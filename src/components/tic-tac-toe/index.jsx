@@ -16,7 +16,7 @@ Square.propTypes = {
   onClick: PropTypes.func,
 };
 
-export function TicTacToe() {
+export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(""));
   const [isXTurn, setIsXTurn] = useState(true);
   const [status, setStatus] = useState("");
