@@ -19,7 +19,8 @@ import "./App.css";
 // import UseFetchHookTest from "./components/use-fetch/test";
 // import UseOnClickOutsideTest from "./components/use-outside-click/test";
 // import UseWindowResizeTest from "./components/use-window-resize/test";
-import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
+// import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
+import ScrollToSection from "./components/scroll-to-section";
 
 function App() {
   return (
@@ -68,7 +69,9 @@ function App() {
       {/* useWindowResize cutom hook */}
       {/* <UseWindowResizeTest /> */}
       {/* Scroll to Top and Bottom feature */}
-      <ScrollToTopAndBottom />
+      {/* <ScrollToTopAndBottom /> */}
+      {/* Scroll to a Particular Section feature */}
+      <ScrollToSection />
     </>
   );
 }
